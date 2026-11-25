@@ -12,3 +12,33 @@ def bubble_sort(arr):
     print("sorted array:", arr)
 
 print(bubble_sort(arr))
+
+arr = [1, 2, 3, 4, 5]
+
+def bubble_sort(arr):
+    passes = 0
+    for i in range(len(arr)):
+        for j in range(0, len(arr)-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+        print(arr)
+        passes +=1
+    print(passes)    
+    print("sorted array:", arr)
+
+print(bubble_sort(arr))
+
+arr = [5, 4, 3, 2, 1]
+
+def bubble_sort(arr):
+    passes = 0
+    for i in range(len(arr)):
+        for j in range(0, len(arr)-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+        print(arr)
+        passes +=1
+    print(passes)    
+    print("sorted array:", arr)
+
+print(bubble_sort(arr))
